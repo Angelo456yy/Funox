@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #333333;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif ;
+
+}
+
+.inicio{
+background-color: #1a1a1a;
+position: fixed; /* Fija el menú en una posición específica */
+top: 0; /* Ancla el menú en la parte superior de la página */
+left: 50%; /* Ancla el menú en la mitad de la página */
+transform: translateX(-50%); /* Centra horizontalmente el menú */
+width: 80%; /* Establece el ancho del menú al 80% del ancho de la página */
+background-color: #333; /* Color de fondo del menú */
+padding: 10px; /* Añade un espacio interno al menú para el contenido */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú */
+z-index: 1000; 
+
+}
+.fun {
+    color: #FF4500; /* Color para "Fun" (en este caso, un tono de naranja) */
+    left: 0px;
+}
+
+.ox {
+    color: #4169E1; /* Color para "Ox" (en este caso, un tono de azul) */
+}
+
+.videos1{
+    background-color: #1a1a1a ;
+}
+
+.video-container {
+    position: relative;
+    width: 800px; /* Ancho deseado del contenedor */
+    height: 800px; /* Alto deseado del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    overflow: hidden; /* Ocultar partes del video que excedan el contenedor */
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    border-radius: 50px;
+}
+
+.video-container video {
+
+    width: 38%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.abajo {
+    position: absolute;
+    bottom: 250px;
+    right: 250px;
+    border-radius: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.abajo#loadNextButton {
+    padding: 20px 40px; /* Ajusta el tamaño del padding para hacer el botón más grande */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 50px; /* Radio de borde para hacer el botón redondeado */
+    cursor: pointer;
+    font-size: 50px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.abajo#loadNextButton:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    position: absolute;
+    bottom: 250px; /* Ajusta la posición vertical del contenedor del logo */
+    left: 95px; /* Ajusta la posición horizontal del contenedor del logo */
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif ;
+    
+}
+
+.logo {
+    display: inline-block; /* Cambia la visualización a inline-block */
+    margin-right: 10px; /* Ajusta el margen derecho entre los logos */
+    display: flex; /* Cambia la visualización a flex */
+    flex-direction: column; /* Alinea los elementos en columnas */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 10px; 
+}
+
+.logo img {
+    width: 50px; /* Tamaño deseado del logo */
+    height: 50px; /* Tamaño deseado del logo */
+    border-radius: 50%; /* Hace que el logo sea redondo */
+    border: 2px solid white; /* Añade un borde blanco de 2px alrededor del contenedor */
+}
+
+.username {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.like-button {
+    background-color: transparent;
+    border: none;
+    color: white; /* Color inicial del corazón */
+    font-size: 50px; /* Tamaño del corazón */
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px; 
+}
+
+.like-button.liked {
+    color: red; /* Color del corazón cuando se le ha dado like */
+}
+.like-count{
+    color: #fff;
+    
+}

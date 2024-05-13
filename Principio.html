@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Ox</title>
+    <link rel="stylesheet" href="diseño.css">
+
+</head>
+<body>
+    <div class="inicio">
+          <h1><span class="fun">Fun</span> <span class="ox">Ox</span></h1> 
+    </div>
+ <div class="videos1">
+    <div class="video-container">
+        <video id="currentVideo" autoplay controls></video>
+        <button class="abajo" id="loadNextButton">↓</button>
+    </div>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="videos\Captura de pantalla 2024-05-06 233222.png" alt="Logo 1" 
+            class="logo-img">
+            <br>
+            <span class="username lencho">Lencho</span>
+            <br>
+            <button class="like-button" id="likeButton"><i class="fas fa-heart">❤️</i></button>
+            <span class="like-count">0</span>
+        </div>
+        <div class="logo">
+            <img src="videos\R (5).png" alt="Logo 2" class="logo-img">
+            <br>
+            <span class="username lencho">MIA Khalifa</span>
+            <br>
+            <button class="like-button" id="likeButton"><i class="fas fa-heart">❤️</i></button>
+            <span class="like-count">0</span>
+        </div>
+        <div class="logo">
+            <img src="videos\WhatsApp Image 2024-05-01 at 10.10.25 PM.jpeg" alt="Logo 3" class="logo-img">
+            <br>
+            <span class="username lencho">Lencho35</span>
+            <br>
+            <button class="like-button" id="likeButton"><i class="fas fa-heart">❤️</i></button>
+            <span class="like-count">0</span>
+        </div>
+        <div class="logo">
+            <img src="extra\R (6).png" alt="Logo 4" class="logo-img">
+            <br>
+            <span class="username lencho">Natalan</span>
+            <br>
+            <button class="like-button" id="likeButton"><i class="fas fa-heart">❤️</i></button>
+            <span class="like-count">0</span>
+        </div>
+        <div class="logo">
+            <img src="extra\OIP (11).jpg" alt="Logo 5" class="logo-img">
+            <br>
+            <span class="username lencho">CR7-10</span>
+            <br>
+            <button class="like-button" id="likeButton"><i class="fas fa-heart">❤️</i></button>
+            <span class="like-count">0</span>
+        </div>
+        <div class="logo">
+            <img src="videos\OIP (11)a.jpg" alt="Logo 6" class="logo-img">
+            <br>
+            <span class="username lencho">user1715</span>
+            <br>
+            <button class="like-button" id="likeButton"><i class="fas fa-heart">❤️</i></button>
+            <span class="like-count">0</span>
+        </div>
+        <!-- Agrega más imágenes de logo y nombres de usuario aquí -->
+    </div>
+    <input type="file" id="fileInput">
+    <button id="uploadButton">Subir Video</button>
+    <video id="uploadedVideo" controls style="display: none;"></video>
+    <button id="addUploadedVideoButton">Agregar Video</button>
+
+ </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
