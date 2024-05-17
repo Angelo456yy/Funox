@@ -25,44 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         { src: "extra/VID_49120515_235245_7642.mp4", logo: 5 }
     ];
 
-    function createLikeButton(index) {
-        const newLikeButton = document.createElement('button');
-        newLikeButton.textContent = '❤️';
-        newLikeButton.classList.add('like-button');
-        newLikeButton.classList.add('grey');
-        newLikeButton.dataset.index = index;
-        newLikeButton.addEventListener('click', () => {
-            if (!newLikeButton.classList.contains('clicked')) {
-                let count = parseInt(newLikeButton.nextElementSibling.textContent);
-                count++;
-                newLikeButton.nextElementSibling.textContent = count;
-                newLikeButton.classList.remove('grey');
-                newLikeButton.classList.add('clicked');
-                localStorage.setItem(`video${index}_likes`, count);
-                localStorage.setItem(`video${index}_liked`, 'true');
-            }
-        });
-        return newLikeButton;
-    }
-
-    function createLikeCount(index) {
-        const newLikeCount = document.createElement('span');
-        newLikeCount.textContent = '0';
-        newLikeCount.classList.add('like-count');
-        const storedLikes = localStorage.getItem(`video${index}_likes`);
-        if (storedLikes) {
-            newLikeCount.textContent = storedLikes;
-        }
-        return newLikeCount;
-    }
-
-    function addLikeButtonAndCount(logo, index) {
-        const newLikeButton = createLikeButton(index);
-        const newLikeCount = createLikeCount(index);
-        logo.appendChild(newLikeButton);
-        logo.appendChild(newLikeCount);
-    }
-
     // Función para cargar y reproducir un video aleatorio
     function playRandomVideo() {
         const randomIndex = Math.floor(Math.random() * videos.length);
@@ -105,10 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const newVideoIndex = videos.length + 1;
         videos.push({ src: objectURL, logo: 6 });
 
-        // Crear elementos de botón de "like" y contador para el nuevo video
-        const newLogoDiv = logos[newVideoIndex - 1];
-        addLikeButtonAndCount(newLogoDiv, newVideoIndex);
-
         // Guardar el video en el localStorage
         localStorage.setItem(`video${newVideoIndex}_src`, objectURL);
     });
@@ -118,3 +76,30 @@ document.addEventListener("DOMContentLoaded", function() {
         addLikeButtonAndCount(logo, index + 1);
     });
 });
+
+// Generar un nombre de usuario aleatorio
+function generarUsuario() {
+    var letras = 'abcdefghijklmnopqrstuvwxyz';
+    var numeros = '0123456789';
+    var nombreUsuario = 'user';
+  
+    for (var i = 0; i < 6; i++) {
+      if (Math.random() < 0.5) {
+        nombreUsuario += letras.charAt(Math.floor(Math.random() * letras.length));
+      } else {
+        nombreUsuario += numeros.charAt(Math.floor(Math.random() * numeros.length));
+      }
+    }
+  
+    return nombreUsuario;
+  }
+  
+  // Obtener el elemento span con la clase "username lencho" dentro del div con id "logo6"
+  var usernameSpan = document.querySelector('#logo6 .username.lencho');
+  
+  // Cambiar el contenido del span por un nombre de usuario aleatorio generado
+  if (usernameSpan) {
+    usernameSpan.textContent = generarUsuario();
+  }
+  
+  
