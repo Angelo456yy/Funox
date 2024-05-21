@@ -16,6 +16,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú */
 display: flex;
 justify-content: space-between;
 border-radius: 10px;
+border: solid 1px rgb(92, 92, 92);
 }
 .fun {
     color: #FF4500; /* Color para "Fun" (en este caso, un tono de naranja) */
@@ -139,15 +140,17 @@ border-radius: 10px;
     height: 78%;
     width: 42%;
     border-radius: 10px;
+    border: solid 1px rgb(92, 92, 92);
 }
 
 .inferior {
     align-items: center;
     padding: 0px;
-    background-color: #333; 
+    background-color: #221f1ff5; 
     width: 20%;
     box-sizing: border-box;
     border-radius: 5px;
+    border: solid 1px rgb(92, 92, 92);
 }
 
 .contactanos, .anuncios {
