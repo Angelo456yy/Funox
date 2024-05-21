@@ -1,33 +1,46 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #333333;
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif ;
     width: 100%;
     height: 100%;
+    display: flex;
+    background-image: url("extra/Jasperwong_Tigerbox.jpg");
 
 }
 
 .inicio{
 background-color: #1a1a1a;
 background-color: #333; /* Color de fondo del menú */
-
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú */
-
-
+display: flex;
+justify-content: space-between;
+border-radius: 10px;
 }
 .fun {
     color: #FF4500; /* Color para "Fun" (en este caso, un tono de naranja) */
     left: 0px;
+    margin-left: 20px; /* Espacio desde el borde izquierdo */
 }
 
 .ox {
     color: #4169E1; /* Color para "Ox" (en este caso, un tono de azul) */
+    margin-right: auto; /* Empuja "Ox" hacia la izquierda */
+
 }
 
-.videos1 {
-    background-color: #1a1a1a;
+.agre {
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 24px;
+    text-align: center;
+    margin-right: 0px; /* Espacio desde el borde derecho */
+}
+
+.videos1 {  
+    background-color: #000000ec;
     display: flex; /* Utiliza flexbox para alinear elementos en una fila */
     justify-content: center; /* Centra horizontalmente los elementos dentro de videos1 */
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
@@ -36,24 +49,26 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú */
 .video-container {
     position: relative;
     width: 800px; /* Ancho deseado del contenedor */
-    height: 500px; /* Alto deseado del contenedor */
-    margin: 0 10px; /* Espaciado horizontal entre contenedores de video */
+    height: 600px; /* Alto deseado del contenedor */
+    margin:  25px; /* Espaciado horizontal entre contenedores de video */
     overflow: hidden; /* Ocultar partes del video que excedan el contenedor */
     display: flex; /* Utilizar flexbox para alinear elementos */
     align-items: center; /* Centrar verticalmente los elementos */
+    border-radius: 20px;
 }
 
 .video-container video {
-    width: 35%;
+    width: 45%;
     height: 99%;
     object-fit: initial;
+    border-radius: 5px;
 }
 
 .abajo {
     position: absolute;
     top: 50%; /* Coloca el botón en la mitad de la página */
     transform: translateY(-50%); /* Alinea el botón verticalmente */
-    right: 450px; /* Ajusta la posición horizontal del botón */
+    right: 380px; /* Ajusta la posición horizontal del botón */
     border-radius: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #007bff; /* Color de fondo del botón */
@@ -116,22 +131,54 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú */
     font-size: 45px;
 }
 
-.agre{
-    background-color: transparent; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 24px;
-}
-
-.inferior{
-    background-color: #333333;
-}
 
 .comentario{
     position: absolute;
     top: 50%; /* Coloca el botón en la mitad de la página */
     transform: translateY(-50%); /* Alinea el botón verticalmente */
     right: 2px; 
-    height: 98%;
-    width: 40%;
+    height: 78%;
+    width: 42%;
+    border-radius: 10px;
+}
+
+.inferior {
+    align-items: center;
+    padding: 0px;
+    background-color: #333; 
+    width: 20%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.contactanos, .anuncios {
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: beige;
+    text-align: center;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+}
+
+.anuncios img {
+    max-width: 100%; /* Hace que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el contenido de anuncios */
+}
+
+.con{
+
+        max-width: 22%; /* Hace que la imagen no se desborde del contenedor */
+        height: auto; /* Mantiene la relación de aspecto de la imagen */
+        margin-bottom: 20px; 
+}
+
+.cont{
+    max-width: 15%; /* Hace que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    margin-bottom: 20px;
+
 }

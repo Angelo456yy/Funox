@@ -101,5 +101,4 @@ function generarUsuario() {
   if (usernameSpan) {
     usernameSpan.textContent = generarUsuario();
   }
-  
-  
+
