@@ -11,8 +11,7 @@ body {
 }
 
 .inicio{
-background-color: #1a1a1a;
-background-color: #333; /* Color de fondo del menú */
+background-color: #171717f5;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra suave al menú */
 display: flex;
 justify-content: space-between;
