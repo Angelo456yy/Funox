@@ -101,4 +101,14 @@ function generarUsuario() {
   if (usernameSpan) {
     usernameSpan.textContent = generarUsuario();
   }
-
+  window.addEventListener('resize', function() {
+    let width = window.innerWidth;
+    // Lógica específica para tamaños de pantalla
+    if (width < 600) {
+        // Hacer algo en pantallas pequeñas
+    } else if (width < 1024) {
+        // Hacer algo en pantallas medianas
+    } else {
+        // Hacer algo en pantallas grandes
+    }
+});
