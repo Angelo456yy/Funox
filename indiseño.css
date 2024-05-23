@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("recur/Jasperwong_Tigerbox_copia.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #171717f5;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: solid 1px rgb(92, 92, 92);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fun {
+    color: #FF4500; /* Color para "Fun" */
+}
+
+.ox {
+    color: #4169E1; /* Color para "Ox" */
+}
+
+/* Navigation Menu Styles */
+.menu {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content Styles */
+main.welcome {
+    background-color: rgba(23, 23, 23, 0.95);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.welcome h2 {
+    color: #FF4500; /* Color para el título */
+    text-align: center;
+    font-size: 2rem;
+}
+
+main.welcome p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    main.welcome {
+        padding: 15px;
+        margin: 15px;
+    }
+}
+
+
+.fun {
+    color: #FF4500; /* Color para "Fun" (en este caso, un tono de naranja) */
+    left: 0px;
+    margin-left: 20px; /* Espacio desde el borde izquierdo */
+}
+
+.ox {
+    color: #4169E1; /* Color para "Ox" (en este caso, un tono de azul) */
+    margin-right: auto; /* Empuja "Ox" hacia la izquierda */
+
+}
+/* Footer Styles */
+footer {
+    background-color: #171717f5;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px rgb(92, 92, 92);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer .contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between items */
+    font-size: 1rem;
+}
+
+footer .contactanos img {
+    width: 30px; /* Smaller size for the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer .contactanos p {
+    margin: 0;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    main.welcome {
+        padding: 15px;
+        margin: 15px;
+    }
+}
