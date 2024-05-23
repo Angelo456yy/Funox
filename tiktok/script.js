@@ -5,24 +5,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const logos = document.querySelectorAll('.logo');
 
     let videos = [
-        { src: "videos/pose (1).mp4", logo: 2 },
-        { src: "videos/video2.mp4", logo: 1 },
-        { src: "videos/video.mp4", logo: 3 },
-        { src: "videos/video (17).mp4", logo: 3 },
+        { src: "videos/pose (1).mp4", logo: 1 },
+        { src: "videos/video2.mp4", logo: 3 },
+        { src: "videos/video (4).mp4", logo: 1 },
+        { src: "videos/video (17).mp4", logo: 1 },
         { src: "videos/video (13).mp4", logo: 2 },
         { src: "videos/video (12).mp4", logo: 2 },
-        { src: "videos/video (9).mp4", logo: 3 },
-        { src: "videos/video (10).mp4", logo: 3 },
-        { src: "videos/video (7).mp4", logo: 3 },
-        { src: "videos/video (4).mp4", logo: 1 },
-        { src: "videos/video (1).mp4", logo: 1 },
-        { src: "videos/video (2).mp4", logo: 3 },
-        { src: "videos/WhatsApp Video 2024-04-28 at 11.58.08 PM.mp4", logo: 2 },
-        { src: "extra/MP4.mp4", logo: 4 },
+        { src: "videos/video (9).mp4", logo: 4 },
+        { src: "videos/pose (6).mp4", logo: 3 },
+        { src: "videos/pose (4).mov", logo: 3 },
+        { src: "videos/444225761_7626402347475518_4366907830211572477_n.mp4", logo: 1 },
+        { src: "videos/b4f47e00b329717bd7e103824b14db45.mp4", logo: 1 },
+        { src: "videos/pose (9).mp4", logo: 3 },
+        { src: "videos/WhatsApp Video 2024-04-28 at 11.58.08 PM.mp4", logo: 5 },
+        { src: "videos/f2565ebd-f7f9-45b1-a200-f519829a0464 (1).mp4", logo: 4 },
         { src: "extra/1714932286117_1714932286119.mp4", logo: 4 },
         { src: "extra/1714930232685_1714930232691.mp4", logo: 4 },
-        { src: "extra/425968090_1156135855747927_7248321472742777025_n.mp4", logo: 4 },
-        { src: "extra/VID_49120515_235245_7642.mp4", logo: 5 }
+        { src: "videos/442502764_7761323113946308_6690897006935286690_n.mp4", logo: 4 },
+        { src: "videos/WhatsApp Video 2024-05-09 at 12.09.06 AM (1).mp4", logo: 5 },
+        { src: "videos/video (21).mp4", logo: 5 }
     ];
 
     // Función para cargar y reproducir un video aleatorio
