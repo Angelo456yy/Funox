@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-image: url("recur/Jasperwong_Tigerbox_copia.jpg");
+    background-image: url("recur/R.gif");
     background-size: cover;
     background-position: center;
     color: white;
@@ -11,7 +11,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #171717f5;
+    background-color: #1a1346fc;
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -27,19 +27,16 @@ header h1 {
     align-items: center;
 }
 
-.fun {
-    color: #FF4500; /* Color para "Fun" */
-}
-
-.ox {
-    color: #4169E1; /* Color para "Ox" */
+.medio{
+    color: aliceblue;
 }
 
 /* Navigation Menu Styles */
 .menu {
-    background-color: #333;
+    background-color: #1f1f1fda;
     text-align: center;
     padding: 10px 0;
+    color: antiquewhite;
 }
 
 .menu ul {
@@ -56,7 +53,6 @@ header h1 {
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
     font-size: 1.2rem;
     transition: background-color 0.3s;
     padding: 10px 15px;
@@ -69,7 +65,7 @@ header h1 {
 
 /* Main Content Styles */
 main.welcome {
-    background-color: rgba(23, 23, 23, 0.95);
+    background-color: rgba(9, 15, 41, 0.759);
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -110,19 +106,23 @@ main.welcome p {
 
 
 .fun {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FF4500; /* Color para "Fun" (en este caso, un tono de naranja) */
     left: 0px;
     margin-left: 20px; /* Espacio desde el borde izquierdo */
+    font-size: 80px;
 }
 
 .ox {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4169E1; /* Color para "Ox" (en este caso, un tono de azul) */
     margin-right: auto; /* Empuja "Ox" hacia la izquierda */
+    font-size: 80px;
 
 }
 /* Footer Styles */
 footer {
-    background-color: #171717f5;
+    background-color: #0e0718c7;
     padding: 20px 0;
     text-align: center;
     border-radius: 10px;
